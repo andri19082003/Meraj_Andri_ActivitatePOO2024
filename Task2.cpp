@@ -122,7 +122,7 @@ int Laptop::nrLaptopuriCreate = 0;
 
 int main() {
    
-    Telefon t1;
+    Telefon t1;("Huawei", "Huawei11");
     Telefon t2("Apple", "iPhone 14");
     Telefon t3("Samsung", "Galaxy S22", 5000, 108);
     cout << "Telefon 1: " << t1.marca << ", " << t1.model << ", Baterie: " << t1.capacitateBaterie << "mAh, Rezolutie camera: " << *t1.cameraResolution << "MP" << endl;
@@ -131,7 +131,7 @@ int main() {
     Telefon::afiseazaNrTelefoane();
 
     
-    Televizor tv1;
+    Televizor tv1;("Finlux", "42");
     Televizor tv2("LG", 55);
     Televizor tv3("Samsung", 65, true, 2160);
     cout << "Televizor 1: " << tv1.marca << ", Diagonala: " << tv1.diagonala << "\", Smart: " << tv1.smart << ", Rezolutie: " << *tv1.rezolutie << "p" << endl;
@@ -140,7 +140,7 @@ int main() {
     Televizor::afiseazaNrTelevizoare();
 
   
-    Laptop l1;
+    Laptop l1;("HP", "HP1550");
     Laptop l2("Dell", "XPS 13");
     Laptop l3("Apple", "MacBook Pro", 16, 512);
     cout << "Laptop 1: " << l1.marca << ", " << l1.model << ", RAM: " << l1.capacitateRam << "GB, Stocare: " << *l1.capacitateStocare << "GB" << endl;
